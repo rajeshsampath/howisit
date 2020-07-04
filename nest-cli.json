@@ -1,0 +1,75 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/backend-service/src",
+  "monorepo": true,
+  "root": "apps/backend-service",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/backend-service/tsconfig.app.json"
+  },
+  "projects": {
+    "backend-service": {
+      "type": "application",
+      "root": "apps/backend-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/backend-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/backend-service/tsconfig.app.json"
+      }
+    },
+    "user-profile-service": {
+      "type": "application",
+      "root": "apps/user-profile-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/user-profile-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user-profile-service/tsconfig.app.json"
+      }
+    },
+    "notification-service": {
+      "type": "application",
+      "root": "apps/notification-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notification-service/tsconfig.app.json"
+      }
+    },
+    "discovery-service": {
+      "type": "application",
+      "root": "apps/discovery-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/discovery-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/discovery-service/tsconfig.app.json"
+      }
+    },
+    "video-service": {
+      "type": "application",
+      "root": "apps/video-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/video-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/video-service/tsconfig.app.json"
+      }
+    },
+    "audio-service": {
+      "type": "application",
+      "root": "apps/audio-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/audio-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/audio-service/tsconfig.app.json"
+      }
+    },
+    "auth-service": {
+      "type": "application",
+      "root": "apps/auth-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth-service/tsconfig.app.json"
+      }
+    }
+  }
+}
